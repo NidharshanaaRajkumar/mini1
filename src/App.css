@@ -1,0 +1,382 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #de56d5aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #95dc84aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #efd4f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(194, 111, 111, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.home-title {
+  color:#080808;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: rgb(234, 236, 243);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.home-button:hover {
+  background-color: #87d0e7;
+}
+.card {
+  padding: 1em;
+}
+
+.read-the-docs {
+  color: #336b46;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('doctor-bg.png'); /* Local image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: keeps image fixed while scrolling */
+  color: #333; /* Optional: text color for contrast */
+}
+
+
+.video-call-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  font-size: 13px;
+  color: #4b5563; /* gray-700 */
+  margin-bottom: 24px;
+}
+
+.home-button {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.video-title {
+  color: #333;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.video-feed {
+  width: 50%;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+}
+.dashboard-container,
+.login-container,
+.home-container {
+  width: 100%;
+  background-color: #f3f4f6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.button-container {
+  margin-top: 20px;
+}
+
+.end-call-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.end-call-button:hover {
+  background-color: rgb(94, 142, 151);
+}
+
+.call-ended {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+.dashboard-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width:1200px;
+  margin: auto;
+}
+
+.dashboard-title {
+  color: #0f1317;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-item {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb; /* blue-600 */
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4b5563; /* gray-700 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #3b82f6; /* blue-500 */
+}
+
+.navbar-link.active {
+  font-weight: 600;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  font: inherit;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  color: #3b82f6;
+}
+.appointment-form {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ef62a4; /* blue-500 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+
+.home-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 25px;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.doctor-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.doctor-info {
+  text-align: center;
+}
+
+.doctor-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.doctor-specialty {
+  color: #3b82f6;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.doctor-experience {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.home-button {
+  margin-top: 20px;
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #2563eb;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;         /* Use column for vertical layout */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;              /* Covers full screen height */
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f1d6f6;
+  max-width: 1300px;
+  margin: 0 auto;
+}
